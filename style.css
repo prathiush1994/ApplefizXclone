@@ -147,8 +147,8 @@ header{
     color: brown;
 }
 
-.row{
-    margin-left: 60px;
+.footer01{
+    margin-left: 30px;
 }
 
 /* ===== MEDIA QUERIES ===== */
@@ -191,7 +191,7 @@ header{
     }
 
     .logo {
-        height: 300px;git
+        height: 300px;
     }
 
     .logo-text {
@@ -200,7 +200,6 @@ header{
         width: 180px
     }
 }
-
 @media (min-width: 768px) and (max-width: 1199.98px) {
     .Middle-leftside {
         height: 90vh;
@@ -224,7 +223,6 @@ header{
         width: 250px
     }
 }
-
 @media (min-width: 1200px) {
     .Middle-leftside {
         height: 100vh;
