@@ -1,0 +1,214 @@
+/*=====================
+    Header part
+======================*/
+header{
+    background-color:  rgb(15, 15, 28);
+    height: 70px;
+}
+.nav-div{
+    background-color:  rgb(15, 15, 28);
+    margin-top: 10px;
+    height: 100%;
+}
+.parle-logo{
+    height: 26px;
+    margin-left: 20px;
+}
+
+/*====== Right side text ====*/
+.nav-link{
+    color: white;
+    font-size: .9em;
+    text-wrap: nowrap;
+    transition: 1s;
+}
+.nav-link:hover
+{
+    color:  rgb(229, 63, 39);;
+}
+
+/*====== Right Hambuger menu ====*/
+.navbar-toggler,
+.navbar-toggler-icon
+{
+    border: none;
+}
+.navbar-toggler
+{
+    color: white;
+}
+
+/*====== Right Hambuger menu : dropdown item ====*/
+.dropdown .dropdown-menu {
+    margin-top: 12px;
+    background-color: rgb(229, 63, 39);
+    border-bottom: 6px solid rgb(1, 1, 42);
+    border-radius: 0;
+}
+
+.dropdown-item{
+    color: white;
+    transition: 0.6s;
+    padding: 10px;
+    font-size: 17px;
+  
+}
+
+.dropdown-item:hover{
+    color: black;
+    background-color: rgb(229, 63, 39);
+}
+
+/*=====================
+    Body part
+======================*/
+
+
+/* ======left SIDE====== */
+.Middle-leftside {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.center-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.logo {
+    height: 500px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo-text {
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    margin-top: -300px;
+}
+
+/* ======RIGHT SIDE====== */
+.Middle-rightside {
+    background-color: #fffdfa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 80px;
+}
+
+.text {
+    font-size: 22px;
+    line-height: 1.6;
+    max-width: 600px;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icons img {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+
+/* ===== MEDIA QUERIES ===== */
+
+
+@media (max-width: 991px) {
+  .dropdown-menu {
+    position: static !important; 
+    float: none;
+    width: auto;
+    margin-top: 0.5rem; 
+    box-shadow: none;
+  }
+
+  .dropdown-item {
+    padding-left: 100px; 
+  }
+}
+
+@media (max-width: 767.98px) {
+    .Middle-leftside {
+        height: 60vh;
+        padding: 60px 0;
+    }
+
+    .center-wrapper {
+       position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .logo {
+        height: 200px;
+    }
+
+    .logo-text {
+        font-size: 24px;
+        margin-top: -120px;
+        width: 150px
+    }
+}
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .Middle-leftside {
+        height: 90vh;
+        padding: 60px 0;
+    }
+
+    .center-wrapper {
+       position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .logo {
+        height: 350px;
+    }
+
+    .logo-text {
+        font-size: 44px;
+        margin-top: -200px;
+        width: 250px
+    }
+}
+@media (min-width: 1200px) {
+    .Middle-leftside {
+        height: 100vh;
+    }
+
+    .center-wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .logo {
+        height: 500px;
+    }
+
+    .logo-text {
+        font-size: 60px;
+        margin-top: -300px;
+    }
+}
